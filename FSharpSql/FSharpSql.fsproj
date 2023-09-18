@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="Configuration.fs" />
+		<Compile Include="OrderQueries.fs" />
+		<Compile Include="EmployeeQueries.fs" />
+		<Compile Include="CustomerQueries.fs" />
+		<Compile Include="Library.fs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="FSharp.Data.SqlClient" Version="2.1.2" />
+	  <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
+	</ItemGroup>
+
+</Project>

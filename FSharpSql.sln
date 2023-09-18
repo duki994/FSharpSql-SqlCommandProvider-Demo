@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql", "FSharpSql\FSharpSql.fsproj", "{E3A4BE15-50EB-40B6-9CEB-43980684DB26}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpSql.Runner", "FSharpSql.Runner\FSharpSql.Runner.fsproj", "{4490B608-4501-4A74-B5E9-5F9FAB079C47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3A4BE15-50EB-40B6-9CEB-43980684DB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A4BE15-50EB-40B6-9CEB-43980684DB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A4BE15-50EB-40B6-9CEB-43980684DB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A4BE15-50EB-40B6-9CEB-43980684DB26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4490B608-4501-4A74-B5E9-5F9FAB079C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4490B608-4501-4A74-B5E9-5F9FAB079C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4490B608-4501-4A74-B5E9-5F9FAB079C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4490B608-4501-4A74-B5E9-5F9FAB079C47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FC6F0BA-3AB8-498C-A3E7-7786A7A20A00}
+	EndGlobalSection
+EndGlobal
