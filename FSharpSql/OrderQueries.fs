@@ -7,7 +7,7 @@ type GetById = SqlCommandProvider<
         SELECT *
         FROM Orders
         WHERE OrderId = @orderId
-""", Configuration.developmentConnectionString>
+""", Configuration.developmentConnectionString, SingleRow = true>
 
 type GetForCustomer = SqlCommandProvider<
 """

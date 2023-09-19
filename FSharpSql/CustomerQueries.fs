@@ -7,5 +7,5 @@ type GetById = SqlCommandProvider<
     SELECT *
     FROM Customers
     WHERE CustomerId = @customerId
-""", Configuration.developmentConnectionString>
+""", Configuration.developmentConnectionString, SingleRow = true>
 
