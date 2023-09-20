@@ -1,5 +1,5 @@
 ﻿open System
-open FSharpSql
+open FSharpSql.TypedQueries
 open FSharpSql.Services
 open CommandLine
 

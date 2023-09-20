@@ -10,7 +10,6 @@ open Microsoft.Extensions.DependencyInjection
 open Giraffe
 open FSharpSql.Giraffe.Api.HttpHandlers
 open FSharpSql.Giraffe.Api.Configuration
-open System.Text.Json.Serialization
 open Newtonsoft.Json
 open Microsoft.FSharpLu.Json
 

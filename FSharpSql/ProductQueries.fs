@@ -1,4 +1,4 @@
-﻿module FSharpSql.ProductQueries
+﻿module FSharpSql.TypedQueries.ProductQueries
 
 open FSharp.Data
 

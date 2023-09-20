@@ -1,4 +1,4 @@
-﻿module FSharpSql.Configuration
+﻿module FSharpSql.TypedQueries.Configuration
 
 
 [<Literal>]

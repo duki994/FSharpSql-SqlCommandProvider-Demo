@@ -1,4 +1,4 @@
-﻿module FSharpSql.EmployeeQueries
+﻿module FSharpSql.TypedQueries.EmployeeQueries
 open FSharp.Data
 
 type GetEmployeeById = SqlCommandProvider<

@@ -12,7 +12,6 @@
 		<Compile Include="OrderQueries.fs" />
 		<Compile Include="EmployeeQueries.fs" />
 		<Compile Include="CustomerQueries.fs" />
-		<Compile Include="Library.fs" />
 	</ItemGroup>
 
 	<ItemGroup>

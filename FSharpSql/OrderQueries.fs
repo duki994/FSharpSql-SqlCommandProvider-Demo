@@ -1,4 +1,4 @@
-﻿module FSharpSql.OrderQueries
+﻿module FSharpSql.TypedQueries.OrderQueries
 
 open FSharp.Data
 

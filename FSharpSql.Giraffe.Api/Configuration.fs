@@ -1,5 +1,5 @@
 ﻿module FSharpSql.Giraffe.Api.Configuration
 
-open FSharpSql
+open FSharpSql.TypedQueries
 
 let connectionString = Configuration.developmentConnectionString

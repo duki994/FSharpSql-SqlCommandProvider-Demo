@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FSharpSql\FSharpSql.fsproj" />
+    <ProjectReference Include="..\FSharpSql\FSharpSql.TypedQueries.fsproj" />
   </ItemGroup>
 
 </Project>

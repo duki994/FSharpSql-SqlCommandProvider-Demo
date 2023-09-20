@@ -1,6 +1,6 @@
 ﻿module FSharpSql.Services.Customer
 
-open FSharpSql
+open FSharpSql.TypedQueries
 
 
 let getById (connectionString : string) id  =

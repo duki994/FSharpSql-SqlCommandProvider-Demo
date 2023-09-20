@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers().AddNewtonsoftJson(x =>
     x.SerializerSettings.Converters.Add(
         new CompactUnionJsonConverter(
-            FSharpInterop.ToOption<bool>(true),
-            FSharpInterop.ToOption<bool>(false)
+            true.ToOption(),
+            false.ToOption()
         )
    )
 );

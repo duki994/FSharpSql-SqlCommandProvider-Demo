@@ -1,6 +1,6 @@
 ﻿module FSharpSql.Services.Product
 
-open FSharpSql
+open FSharpSql.TypedQueries
 
 
 let add (connectionString : string) productName supplierId categoryId quantityPerUnit unitPrice unitsInStock unitsOnOrder reorderLevel discontinued =

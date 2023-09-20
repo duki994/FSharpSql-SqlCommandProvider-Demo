@@ -1,4 +1,4 @@
-﻿module FSharpSql.CustomerQueries
+﻿module FSharpSql.TypedQueries.CustomerQueries
 
 open FSharp.Data
 

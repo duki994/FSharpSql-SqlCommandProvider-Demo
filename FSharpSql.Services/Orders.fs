@@ -1,6 +1,6 @@
 ﻿module FSharpSql.Services.Orders
 
-open FSharpSql
+open FSharpSql.TypedQueries
 
 let getById (connectionString : string) id =
     let cmd = new OrderQueries.GetById(connectionString)

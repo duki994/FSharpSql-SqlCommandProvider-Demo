@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql", "FSharpSql\FSharpSql.fsproj", "{E3A4BE15-50EB-40B6-9CEB-43980684DB26}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql.TypedQueries", "FSharpSql\FSharpSql.TypedQueries.fsproj", "{E3A4BE15-50EB-40B6-9CEB-43980684DB26}"
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql.Runner", "FSharpSql.Runner\FSharpSql.Runner.fsproj", "{4490B608-4501-4A74-B5E9-5F9FAB079C47}"
 EndProject
@@ -11,7 +11,7 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql.Giraffe.Api", "FS
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql.Services", "FSharpSql.Services\FSharpSql.Services.fsproj", "{416864B4-BD86-4645-9620-CBF034E039C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.WebAPI", "CSharp.WebAPI\CSharp.WebAPI.csproj", "{A0076ACA-10A3-4B78-91C5-D93134DF5025}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.WebAPI", "CSharp.WebAPI\CSharp.WebAPI.csproj", "{A0076ACA-10A3-4B78-91C5-D93134DF5025}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
