@@ -9,7 +9,9 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql.Runner", "FSharpS
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql.Giraffe.Api", "FSharpSql.Giraffe.Api\FSharpSql.Giraffe.Api.fsproj", "{F318FD41-C902-4E85-9F83-F2F05D6DAD20}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpSql.Services", "FSharpSql.Services\FSharpSql.Services.fsproj", "{416864B4-BD86-4645-9620-CBF034E039C6}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql.Services", "FSharpSql.Services\FSharpSql.Services.fsproj", "{416864B4-BD86-4645-9620-CBF034E039C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.WebAPI", "CSharp.WebAPI\CSharp.WebAPI.csproj", "{A0076ACA-10A3-4B78-91C5-D93134DF5025}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{416864B4-BD86-4645-9620-CBF034E039C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{416864B4-BD86-4645-9620-CBF034E039C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{416864B4-BD86-4645-9620-CBF034E039C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0076ACA-10A3-4B78-91C5-D93134DF5025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0076ACA-10A3-4B78-91C5-D93134DF5025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0076ACA-10A3-4B78-91C5-D93134DF5025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0076ACA-10A3-4B78-91C5-D93134DF5025}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

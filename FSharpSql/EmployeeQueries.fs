@@ -7,6 +7,3 @@ type GetEmployeeById = SqlCommandProvider<
         FROM Employees
         WHERE EmployeeId = @employeeId
 """, Configuration.developmentConnectionString>
-
-
-
