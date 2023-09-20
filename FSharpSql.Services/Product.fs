@@ -1,4 +1,4 @@
-﻿module Product
+﻿module FSharpSql.Services.Product
 
 open FSharpSql
 
@@ -30,3 +30,8 @@ let delete (connectionString : string) productId =
         Ok (productId)
     with ex ->
         Error ex
+
+let getById (connectionString : string) productId = 
+    let cmd = new ProductQueries.GetById(connectionString)
+    cmd.Execute(productId = productId)
+

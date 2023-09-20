@@ -1,4 +1,4 @@
-﻿module Orders
+﻿module FSharpSql.Services.Orders
 
 open FSharpSql
 

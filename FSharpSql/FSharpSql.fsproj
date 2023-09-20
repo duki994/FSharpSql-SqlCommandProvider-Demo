@@ -8,6 +8,7 @@
 	<ItemGroup>
 		<Compile Include="Configuration.fs" />
 		<Compile Include="ProductCommands.fs" />
+		<Compile Include="ProductQueries.fs" />
 		<Compile Include="OrderQueries.fs" />
 		<Compile Include="EmployeeQueries.fs" />
 		<Compile Include="CustomerQueries.fs" />

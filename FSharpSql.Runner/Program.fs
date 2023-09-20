@@ -1,5 +1,6 @@
 ﻿open System
 open FSharpSql
+open FSharpSql.Services
 open CommandLine
 
 type Options = {

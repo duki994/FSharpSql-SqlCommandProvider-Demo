@@ -1,4 +1,4 @@
-﻿module Customer
+﻿module FSharpSql.Services.Customer
 
 open FSharpSql
 
