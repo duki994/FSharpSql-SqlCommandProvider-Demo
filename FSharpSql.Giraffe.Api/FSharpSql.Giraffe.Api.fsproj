@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Compile Include="Configuration.fs" />
+    <Compile Include="Customer\HttpHandlers.fs" />
     <Compile Include="Order\HttpHandlers.fs" />
     <Compile Include="Product\HttpHandlers.fs" />
     <Compile Include="Models.fs" />

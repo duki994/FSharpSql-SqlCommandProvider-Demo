@@ -9,11 +9,10 @@ module HttpHandlers =
         fun next ctx ->
             task {
                 let! orderResult = Orders.asyncGetById connectionString id
-                match orderResult with
-                | Some order ->
-                    return! json order next ctx
-                | None -> 
-                    return! (setStatusCode 404 >=> text "Order Not Found") next ctx
+
+                return! orderResult
+                    |> Option.map (fun order -> json order next ctx)
+                    |> Option.defaultValue ((setStatusCode 404 >=> text "Order Not Found") next ctx)
             }
 
     let getForCustomer (connectionString : string) customerId : HttpHandler =

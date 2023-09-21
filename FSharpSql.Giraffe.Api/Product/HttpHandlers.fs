@@ -10,8 +10,8 @@ module HttpHandlers =
             task {
                 let! productResult = Product.asyncGetById connectionString id
 
-                match productResult with
-                | Some product -> return! json product next ctx
-                | None -> return! (setStatusCode 204 >=> text "") next ctx
+                return! productResult
+                    |> Option.map (fun product -> json product next ctx)
+                    |> Option.defaultValue ((setStatusCode 204 >=> text "") next ctx)
             }
 

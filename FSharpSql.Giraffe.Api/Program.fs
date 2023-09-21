@@ -40,6 +40,13 @@ let webApp =
                             routeCif "/for-customer/%s" (Order.HttpHandlers.getForCustomer connectionString)
                         ]
                     ])
+                // customer routes
+                subRoute "/customer"
+                    (choose [
+                        GET >=> choose [
+                            routeCif "/%s" (Customer.HttpHandlers.getById connectionString)
+                        ]
+                    ])
             ])
         setStatusCode 404 >=> text "Not Found" ]
 
