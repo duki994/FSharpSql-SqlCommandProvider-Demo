@@ -9,9 +9,13 @@
     <Compile Include="Customer.fs" />
     <Compile Include="Orders.fs" />
     <Compile Include="Product.fs" />
+    <Compile Include="CSharpInterop\Customer.fs" />
+    <Compile Include="CSharpInterop\Orders.fs" />
+    <Compile Include="CSharpInterop\Product.fs" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FSharpSql.TypedQueries.Dtos\FSharpSql.TypedQueries.Dtos.fsproj" />
     <ProjectReference Include="..\FSharpSql.TypedQueries\FSharpSql.TypedQueries.fsproj" />
   </ItemGroup>
 

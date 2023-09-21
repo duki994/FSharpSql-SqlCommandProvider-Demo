@@ -7,4 +7,3 @@ type GetById = SqlCommandProvider<"
     WHERE ProductId = @productId
 ", Configuration.developmentConnectionString, SingleRow = true>
 
-

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using FSharpSql.Services.CSharpInterop;
 
 namespace CSharp.WebAPI.Controllers;
 
@@ -14,13 +15,9 @@ public class ProductController : ControllerBase
     }
 
     [HttpGet("{id:int}")]
-    public IActionResult GetById(int id)
+    public async Task<IActionResult> GetByIdAsync(int id)
     {
-        // TODO: Use a simple DTO type instead of returning the F# type provider generated type directly.
-        // FSharp.Data.SqlClient uses Design-Time Erased type providers, so we can't use System.Text.Json as it's
-        // not supported. We can use Newtonsoft.Json, but we need to add a custom converter to handle
-        // F# types (Unions etc.).
-        var maybeProduct = FSharpSql.Services.Product.getById(_connectionString, id);
+        var maybeProduct = await Product.getByIdAsync(_connectionString, id);
 
         if (maybeProduct.IsSome())
         {

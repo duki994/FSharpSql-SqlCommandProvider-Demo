@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using FSharpSql.Services.CSharpInterop;
 
 namespace CSharp.WebAPI.Controllers
 {
@@ -15,9 +16,9 @@ namespace CSharp.WebAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetById(string id)
+        public async Task<IActionResult> GetById(string id)
         {
-            var maybeCustomer = FSharpSql.Services.Customer.getById(_connectionString, id);
+            var maybeCustomer = await Customer.getByIdAsync(_connectionString, id);
             if (maybeCustomer.IsSome())
             {
                 return Ok(maybeCustomer.Value);

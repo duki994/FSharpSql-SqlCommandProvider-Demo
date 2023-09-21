@@ -7,8 +7,11 @@ module HttpHandlers =
 
     let getById connectionString id : HttpHandler =
         fun next ctx  ->
-            let productResult = Product.getById connectionString id
-            match productResult with
-            | Some product -> json product next ctx
-            | None -> (setStatusCode 204 >=> text "") next ctx
+            task {
+                let! productResult = Product.asyncGetById connectionString id
+
+                match productResult with
+                | Some product -> return! json product next ctx
+                | None -> return! (setStatusCode 204 >=> text "") next ctx
+            }
 

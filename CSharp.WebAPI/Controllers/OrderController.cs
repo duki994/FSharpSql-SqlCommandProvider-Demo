@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using FSharpSql.Services.CSharpInterop;
 
 namespace CSharp.WebAPI.Controllers;
 
@@ -15,9 +16,9 @@ public class OrderController : ControllerBase
     }
 
     [HttpGet("{id:int}")]
-    public IActionResult GetById(int id)
+    public async Task<IActionResult> GetById(int id)
     {
-        var maybeOrder = FSharpSql.Services.Orders.getById(_connectionString, id);
+        var maybeOrder = await Orders.getByIdAsync(_connectionString, id);
         if (maybeOrder.IsSome())
         {
             return Ok(maybeOrder.Value);
@@ -27,9 +28,9 @@ public class OrderController : ControllerBase
     }
 
     [HttpGet("customer/{customerId}")]
-    public IActionResult GetForCustomer(string customerId)
+    public async Task<IActionResult> GetForCustomer(string customerId)
     {
-        var orders = FSharpSql.Services.Orders.getForCustomer(_connectionString, customerId);
+        var orders = await Orders.getForCustomerAsync(_connectionString, customerId);
         return Ok(orders);
     }
 }

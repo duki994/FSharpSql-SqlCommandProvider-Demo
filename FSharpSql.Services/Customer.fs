@@ -2,8 +2,7 @@
 
 open FSharpSql.TypedQueries
 
-
-let getById (connectionString : string) id  =
+let asyncGetById (connectionString : string) id =
     let cmd = new CustomerQueries.GetById (connectionString)
-    cmd.Execute(customerId = id)
+    cmd.AsyncExecute(customerId = id)
 
