@@ -26,6 +26,5 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FSharpSql.Services\FSharpSql.Services.fsproj" />
-    <ProjectReference Include="..\FSharpSql\FSharpSql.TypedQueries.fsproj" />
   </ItemGroup>
 </Project>

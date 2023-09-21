@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql.TypedQueries", "FSharpSql\FSharpSql.TypedQueries.fsproj", "{E3A4BE15-50EB-40B6-9CEB-43980684DB26}"
-EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql.Runner", "FSharpSql.Runner\FSharpSql.Runner.fsproj", "{4490B608-4501-4A74-B5E9-5F9FAB079C47}"
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql.Giraffe.Api", "FSharpSql.Giraffe.Api\FSharpSql.Giraffe.Api.fsproj", "{F318FD41-C902-4E85-9F83-F2F05D6DAD20}"
@@ -13,16 +11,14 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql.Services", "FShar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.WebAPI", "CSharp.WebAPI\CSharp.WebAPI.csproj", "{A0076ACA-10A3-4B78-91C5-D93134DF5025}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "FSharpSql.TypedQueries", "FSharpSql.TypedQueries\FSharpSql.TypedQueries.fsproj", "{5EA990E5-8899-4614-A0B7-520C9416AF7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E3A4BE15-50EB-40B6-9CEB-43980684DB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E3A4BE15-50EB-40B6-9CEB-43980684DB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E3A4BE15-50EB-40B6-9CEB-43980684DB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E3A4BE15-50EB-40B6-9CEB-43980684DB26}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4490B608-4501-4A74-B5E9-5F9FAB079C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4490B608-4501-4A74-B5E9-5F9FAB079C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4490B608-4501-4A74-B5E9-5F9FAB079C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{A0076ACA-10A3-4B78-91C5-D93134DF5025}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0076ACA-10A3-4B78-91C5-D93134DF5025}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0076ACA-10A3-4B78-91C5-D93134DF5025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EA990E5-8899-4614-A0B7-520C9416AF7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA990E5-8899-4614-A0B7-520C9416AF7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA990E5-8899-4614-A0B7-520C9416AF7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA990E5-8899-4614-A0B7-520C9416AF7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
