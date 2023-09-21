@@ -1,5 +1,8 @@
 ﻿namespace FSharpSql.TypedQueries.Dtos
 
+// TODO: Investigate if FSharp Code Quotations can be used to generate. 
+// Such metaprogramming approach would be more succint. And maybe way too clever for its own good.
+
 module OrderDto =
     open System
 
